@@ -52,6 +52,7 @@ public class WatchDog {
         Class<?> clz = signature.getDeclaringType();
         String methodName = signature.getName();
 
+
         long startTime = System.nanoTime();
         Object result = proceedingJoinPoint.proceed();
         long endTime = System.nanoTime();
